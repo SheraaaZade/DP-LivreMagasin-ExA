@@ -3,12 +3,15 @@ import java.util.Map;
 
 public abstract class Magasin {
 
-    private Map<String,DVD> bac= new HashMap<String,DVD>();
+    private Map<String,Produit> bac= new HashMap<String,Produit>();
     public void ajouter(String name, int anneeDeParution){
-        DVD dvd=new DVD(name, anneeDeParution);
-        bac.put(name,dvd);
+        Produit produit=creerProduit(name, anneeDeParution);
+        bac.put(name,produit);
     }
-    public DVD retourneDVD(String name){
+
+    protected abstract Produit creerProduit(String name, int anneeDeParution);
+    public Produit retourneProduit(String name){
         return bac.get(name);
     }
+
 }
