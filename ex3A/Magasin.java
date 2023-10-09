@@ -5,7 +5,7 @@ public abstract class Magasin {
 
     private Map<String,Produit> bac= new HashMap<String,Produit>();
     public void ajouter(String name, int anneeDeParution){
-        Produit produit=creerProduit(name, anneeDeParution);
+        Produit produit=this.creerProduit(name, anneeDeParution);
         bac.put(name,produit);
     }
 
