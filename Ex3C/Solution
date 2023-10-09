@@ -1,0 +1,10 @@
+Strategy : distance -> km
+                    -> miles
+
+Decorator: Captain implements Battleship
+        et battleship contient un attribut battleship
+
+
+Adapter
+BattleFishingBoat transforme
+        -> FishingBoat

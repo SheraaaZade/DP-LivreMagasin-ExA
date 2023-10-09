@@ -1,0 +1,11 @@
+Pattern : Decorator
+
+Participants théoriques : noms utilisés dans le code
+
+Component: Boisson
+ConcreteComponent: Cafe, Dessert, Decafeine, Moka
+Decorator: Additif
+ConcreteDecorator: Creme, Lait, Sucre
+
+Noms théoriques méthodes: noms utilisés
+Opertation() : getNom(), toString(), Prix()
